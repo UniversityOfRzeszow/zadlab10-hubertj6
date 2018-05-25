@@ -27,7 +27,7 @@ public class Zad5 {
             int liczba = wczytaj.nextInt();
             return liczba;
         } catch (Exception e) {
-            System.out.println("Niepoprawne dane");
+            System.out.println("Zle dane");
             return wprowadzInt();
         }
 
@@ -35,12 +35,12 @@ public class Zad5 {
 
     public static String wprowadzString() {
         Scanner wczytaj = new Scanner(System.in);
-        System.out.println("Podaj ciag znakow: ");
+        System.out.println("Podaj tekst: ");
         try {
             String liczba = wczytaj.next();
             return liczba;
         } catch (Exception e) {
-            System.out.println("Niepoprawne dane");
+            System.out.println("Zle dane");
            return wprowadzString();
         }
 
@@ -53,7 +53,7 @@ public class Zad5 {
             float liczba = wczytaj.nextFloat();
             return liczba;
         } catch (Exception e) {
-            System.out.println("Niepoprawne dane");
+            System.out.println("Zle dane");
             return wprowadzfloat();
         }
 
@@ -66,7 +66,7 @@ public class Zad5 {
             short liczba = wczytaj.nextShort();
             return liczba;
         } catch (Exception e) {
-            System.out.println("Niepoprawne dane");
+            System.out.println("Zle dane");
             return wprowadzshort();
         }
 
@@ -82,12 +82,12 @@ public class Zad5 {
                 bwo.newLine();
             }
         } catch (IOException ex) {
-            System.out.println("NIEUDANA PROBA ZAPISU DO PLIKU");
+            System.out.println("Error blad zapisu do pliku");
        } finally {
             try {
                 fwo.close();
             } catch (IOException ex) {
-                System.out.println("NIEUDANA PROBA ZAPISU DO PLIKU");
+                System.out.println("Error blad zapisu do pliku");
             }
         }
     }
@@ -102,12 +102,12 @@ public class Zad5 {
             bwo.newLine();
             bwo.close();
         } catch (IOException ex) {
-            System.out.println("NIEUDANA PROBA ZAPISU DO PLIKU");
+            System.out.println("Error blad zapisu do pliku");
         } finally {
             try {
                fwo.close();
             } catch (IOException ex) {
-                System.out.println("NIEUDANA PROBA ZAPISU DO PLIKU");
+                System.out.println("Error blad zapisu do pliku");
            }
        }
     }
@@ -122,12 +122,12 @@ public class Zad5 {
             bwo.newLine();
             bwo.close();
         } catch (IOException ex) {
-            System.out.println("NIEUDANA PROBA ZAPISU DO PLIKU");
+            System.out.println("Error blad zapisu do pliku");
         } finally {
             try {
                fwo.close();
             } catch (IOException ex) {
-                System.out.println("NIEUDANA PROBA ZAPISU DO PLIKU");
+                System.out.println("Error blad zapisu do pliku");
             }
         }
     }
@@ -142,12 +142,12 @@ public class Zad5 {
             bwo.newLine();
             bwo.close();
         } catch (IOException ex) {
-           System.out.println("NIEUDANA PROBA ZAPISU DO PLIKU");
+           System.out.println("Error blad zapisu do pliku");
         } finally {
             try {
                 fwo.close();
             } catch (IOException ex) {
-                System.out.println("NIEUDANA PROBA ZAPISU DO PLIKU");
+                System.out.println("Error blad zapisu do pliku");
             }
         }
     }
@@ -158,7 +158,7 @@ public class Zad5 {
             fr = new FileReader("int.txt");
             BufferedReader br = new BufferedReader(fr);
             String stringRead = ":D";
-            System.out.println("CZYTANIE Z PLIKU ! ! !");
+            System.out.println("Odczyt z pliku");
             int i = 1;
             while (stringRead != null) {
                 stringRead = br.readLine();
@@ -187,7 +187,7 @@ public class Zad5 {
             fr = new FileReader("String.txt");
             BufferedReader br = new BufferedReader(fr);
             String stringRead = ":D";
-            System.out.println("CZYTANIE Z PLIKU ! ! !");
+            System.out.println("Odczyt z pliku");
           int i = 1;
             while (stringRead != null) {
                 stringRead = br.readLine();
@@ -216,7 +216,7 @@ public class Zad5 {
             fr = new FileReader("float.txt");
             BufferedReader br = new BufferedReader(fr);
             String stringRead = ":D";
-            System.out.println("CZYTANIE Z PLIKU ! ! !");
+            System.out.println("Odczyt z pliku");
             int i = 1;
             while (stringRead != null) {
                 stringRead = br.readLine();
@@ -244,7 +244,7 @@ public class Zad5 {
             fr = new FileReader("short.txt");
             BufferedReader br = new BufferedReader(fr);
             String stringRead = ":D";
-            System.out.println("CZYTANIE Z PLIKU ! ! !");
+            System.out.println("Odczyt z pliku");
             int i = 1;
             while (stringRead != null) {
                 stringRead = br.readLine();
